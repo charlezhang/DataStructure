@@ -1,10 +1,10 @@
 
-/*定义单向链表的数据结构*/
-struct LNode
+#define INIT_LIST_SIZE 10
+#define LISTINCREMENT  2
+
+typedef struct
 {
-	ElemType data;
-	struct LNode *next;
-}; 
-typedef struct LNode *LinkList; /*LinkList 为指向头结点的指针*/
-				   
-typedef struct LNode LNode;
+	ElemType *elem;
+	int length;
+	int listsize;
+}SqList;
